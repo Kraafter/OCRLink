@@ -79,12 +79,9 @@ def helpsect():
 
 appl = Tk()
 
-p1 = PhotoImage(file='C:\\Program Files\\KraaftWare\\ocrlink\\resource\\icon.png')
-
 appl.title('ImageLink')
 appl.geometry("550x120")
 appl.resizable(width=False, height=False)
-appl.iconphoto(True, p1)
 
 txthead = Label(appl, text = "ImageLink link grabber")
 textout = Label(appl, text="                                       ",background='lightgray', justify="center")
