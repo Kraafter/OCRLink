@@ -12,13 +12,12 @@ def ocrproc():
         return "Not an image file"
     else:
         try:
-            image.save('C:\\Program Files\\KraaftWare\\ocrlink\\cachedimages\\getimagoe.png', 'PNG')
+            image.save('C:\\AppData\\Local\\Temp\\pgetimage.png', 'PNG')
         except:
             return "Not an image file"
         else:
-            textgot = str(pytesseract.image_to_string(Image.open('C:\\Program Files\\KraaftWare\\ocrlink'
-                                                                 '\\cachedimages\\getimagoe.png')))
-            os.remove('C:\\Program Files\\KraaftWare\\ocrlink\\cachedimages\\getimagoe.png')
+            textgot = str(pytesseract.image_to_string(Image.open('C:\\AppData\\Local\\Temp\\pgetimage.png')))
+            os.remove('C:\\AppData\\Local\\Temp\\pgetimage.png')
             print(textgot)
             return textgot.replace('\n', '')
 
